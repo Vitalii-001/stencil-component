@@ -1,0 +1,24 @@
+{
+  "name": "vitalijdemo-stencil",
+  "version": "0.0.5",
+  "description": "A demo app for testing stencil integration",
+  "main": "dist/myname.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": ["dist/"],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/core": "~0.14.1",
+    "@stencil/router": "~0.3.0"
+  },
+  "author": "Vitalij",
+  "license": "ISC",
+  "devDependencies": {
+    "workbox-build": "3.4.1"
+  }
+}
